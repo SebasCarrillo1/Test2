@@ -1,0 +1,11 @@
+on: push
+jobs:
+  build-node:
+    runs-on: ubuntu-latest
+    container: node:16
+    steps: 
+      - run: echo "Sebastián Carrillo Cuevas"
+      - run: node --version
+      - run: echo "Expediente 739460"
+      - uses: actions/checkout@v3
+      
